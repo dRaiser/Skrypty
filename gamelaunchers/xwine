@@ -1,0 +1,17 @@
+#!/bin/sh
+# cd to dir && run in wine in another X Display
+gm 1
+if [ ! "$1" ]; then
+   echo "Usage : xwine [gameDir] [exe]"
+   exit
+fi
+if [ ! "$2" ]; then
+   echo "Usage : xwine [gameDir] [exe]"
+   exit
+fi
+
+X :2 -ac -terminate & nvidia-settings --load-config-only
+sleep 10
+DISPLAY=:2
+cd "$1"
+wine "$2" $3
