@@ -34,6 +34,9 @@ eg.
 3. link scripts you want to /usr/bin
 
    sudo ln -s /home/$USER/Skrypty/gamelaunchers/run_anylingame.sh /usr/bin/run_anylingame
+   
    sudo ln -s /home/$USER/Skrypty/gamelaunchers/run_anywingame.sh /usr/bin/run_anywingame
+   
    sudo ln -s /home/$USER/Skrypty/gamelaunchers/xwine /usr/bin/xwine
+   
    sudo ln -s /home/$USER/Skrypty/gamelaunchers/run_newdesktopgame /usr/bin/run_newdesktopgame
