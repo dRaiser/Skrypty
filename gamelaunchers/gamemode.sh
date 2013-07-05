@@ -5,6 +5,8 @@ if [ $1 == 1 ]; then
 	gsettings set org.cinnamon panel-autohide true
 	sudo cpupower frequency-set -g performance
 	export SDL_VIDEO_FULLSCREEN_DISPLAY=0
+	export LD_PRELOAD="libpthread.so.0 libGL.so.1"
+	export __GL_THREADED_OPTIMIZATIONS=1
 elif [ $1 == 0 ]; then
 	geary &
 	turnonleftmonitor

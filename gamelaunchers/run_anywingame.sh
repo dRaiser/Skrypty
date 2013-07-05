@@ -4,4 +4,4 @@
 
 gm 1
 cd "$1"
-wine start "$2"
+WINEDEBUG=-all wine start "$2"

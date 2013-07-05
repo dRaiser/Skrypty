@@ -4,4 +4,4 @@
 
 gm 1
 cd "$1"
-wine explorer /desktop=Winedesktop,1920x1080 "$2"
+WINEDEBUG=-all wine explorer /desktop=Winedesktop,1920x1080 "$2"
