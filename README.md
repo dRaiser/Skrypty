@@ -1,6 +1,9 @@
 Skrypty
 =======
 
+gamelaunchers
+=======
+
 Set of bash scripts helping running games on Linux (native and WINE). For nvidia users mostly.
 
 Please modify those scripts for your own need cause they're created for my config (especially gamemode.sh)!
