@@ -1,6 +1,8 @@
 if [ $1 == 1 ]; then
 	pkill geary
+	pkill evolution
 	pkill owncloud
+	pkill spotify
 	rm /home/draiser/.local/share/data/ownCloud/lock
 	gsettings set org.cinnamon panel-autohide true
 	sudo cpupower frequency-set -g performance
@@ -9,6 +11,9 @@ if [ $1 == 1 ]; then
 	export __GL_THREADED_OPTIMIZATIONS=1
 elif [ $1 == 0 ]; then
 	geary &
+	#spotify &
+	#evolution &> /dev/null
+	owncloud &
 	turnonleftmonitor
 	sleep 2
 	devilspie -a > /dev/null 2>&1 &

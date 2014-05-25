@@ -10,8 +10,11 @@ if [ ! "$2" ]; then
    exit
 fi
 
+echo "01"
 X :2 -ac -terminate & nvidia-settings --load-config-only
+echo "02"
 sleep 10
 DISPLAY=:2
 cd "$1"
 WINEDEBUG=-all wine "$2" $3
+echo "03"
